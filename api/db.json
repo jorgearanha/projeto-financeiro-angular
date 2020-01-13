@@ -14,6 +14,7 @@
       "tipoId": 1,
       "estadoId": 0,
       "valor": 200,
+      "descricao": "Mercado",
       "data_venc": "",
       "data_fim": "20/01/2020"
     }

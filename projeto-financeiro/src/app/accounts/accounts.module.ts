@@ -11,7 +11,7 @@ import { HttpClientModule } from '@angular/common/http';
   declarations: [MovimentacaoComponent, ContaDetalhesPageComponent],
   imports: [
     CommonModule,
-    HttpClientModule
+    HttpClientModule,
   ],
   providers : [
     MovimentacaoService
