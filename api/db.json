@@ -4,15 +4,18 @@
       "id" : 1,
       "numero": 3100,
       "agencia": 4340,
-      "bancoId": 756,
+      "bancoId": 1,
       "saldo": 0 
     }
   ],
-  "transitions": [
+  "movimentacao": [
     {
       "id": 1,
       "tipoId": 1,
-      "valor": 200
+      "estadoId": 0,
+      "valor": 200,
+      "data_venc": "",
+      "data_fim": "20/01/2020"
     }
   ],
   "tipos": [
@@ -28,7 +31,8 @@
   "bancos": [
     {
       "id": 1,
-      "nome": "Sicoob"
+      "nome": "Sicoob",
+      "numero" : 756
     }
   ],
   "mov_mes": [

@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { MovimentacaoApiModel } from '../../models/movimentacao-api-model';
 
 @Component({
   selector: 'app-movimentacao',
@@ -7,6 +8,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MovimentacaoComponent implements OnInit {
 
+  @Input() movimentacao: MovimentacaoApiModel;
+  
   constructor() { }
 
   ngOnInit() {

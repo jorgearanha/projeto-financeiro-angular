@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { MovimentacaoService } from '../../services/movimentacao.service';
+import { MovimentacaoApiModel } from '../../models/movimentacao-api-model';
 
 @Component({
   selector: 'app-conta-detalhes-page',
@@ -7,9 +9,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContaDetalhesPageComponent implements OnInit {
 
-  constructor() { }
+  movimentacoes: MovimentacaoApiModel[];
+
+  constructor(private movimentacaoService: MovimentacaoService) {
+    movimentacaoService.load();
+  }
 
   ngOnInit() {
+    this.movimentacaoService.state$.
+      subscribe( dados => {
+        this.movimentacoes = dados;
+      });
   }
 
 }
