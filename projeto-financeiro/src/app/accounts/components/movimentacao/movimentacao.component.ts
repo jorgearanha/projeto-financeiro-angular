@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { MovimentacaoApiModel } from '../../models/movimentacao-api-model';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-movimentacao',
@@ -9,10 +10,12 @@ import { MovimentacaoApiModel } from '../../models/movimentacao-api-model';
 export class MovimentacaoComponent implements OnInit {
 
   @Input() movimentacao: MovimentacaoApiModel;
-  
+
   constructor() { }
 
   ngOnInit() {
+
+    
   }
 
 }

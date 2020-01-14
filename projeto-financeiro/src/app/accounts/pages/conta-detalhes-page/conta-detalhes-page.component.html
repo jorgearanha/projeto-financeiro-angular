@@ -1,7 +1,20 @@
-<div>
+<mat-toolbar color="primary">
+    <span>FirstRow</span>
+</mat-toolbar>
 
-</div>
-<app-movimentacao 
-    *ngFor="let movimentacao of movimentacoes" 
-    [movimentacao]="movimentacao">
-</app-movimentacao>
+<section class="saldo">
+    <h4>Saldo: {{saldo | currency:'R$ ':'symbol'}}</h4>
+</section>
+
+<section class="movimentacoes">
+    <h4>Entradas</h4>
+    <div class="entradas">
+        <app-movimentacao *ngFor="let entrada of entradas" [movimentacao]="entrada">
+        </app-movimentacao>
+    </div>
+    <h4>Saídas</h4>
+    <div class="saidas">
+        <app-movimentacao *ngFor="let saida of saidas" [movimentacao]="saida">
+        </app-movimentacao>
+    </div>
+</section>

@@ -9,17 +9,33 @@ import { MovimentacaoApiModel } from '../../models/movimentacao-api-model';
 })
 export class ContaDetalhesPageComponent implements OnInit {
 
-  movimentacoes: MovimentacaoApiModel[];
+  entradas: MovimentacaoApiModel[] = [];
+  saidas: MovimentacaoApiModel[] = [];
+  saldo: number = 0;
 
-  constructor(private movimentacaoService: MovimentacaoService) {
-    movimentacaoService.load();
-  }
+  constructor(private movimentacaoService: MovimentacaoService) { }
 
   ngOnInit() {
-    this.movimentacaoService.state$.
-      subscribe( dados => {
-        this.movimentacoes = dados;
+    this.movimentacaoService.getEntradas().
+      subscribe(entrada => {
+        this.entradas = entrada;
+        
+        this.movimentacaoService.getSaidas().
+          subscribe(saida => {
+            this.saidas = saida;
+
+            this.saldo = 0;
+
+            this.entradas.forEach((entr) => this.saldo += entr.valor);
+            this.saidas.forEach((sai) => this.saldo -= sai.valor);
+          })
+
       });
+
+    this.movimentacaoService.getSaidas().
+      subscribe(saida => this.saidas = saida)
+    //console.log(this.saidas);
+
   }
 
 }
