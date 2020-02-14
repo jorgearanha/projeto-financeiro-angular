@@ -7,15 +7,19 @@ import { Observable } from 'rxjs';
   templateUrl: './movimentacao.component.html',
   styleUrls: ['./movimentacao.component.scss']
 })
-export class MovimentacaoComponent implements OnInit {
-
+export class MovimentacaoComponent implements OnInit{
+  
   @Input() movimentacao: MovimentacaoApiModel;
-
-  constructor() { }
-
+  
+  esta_atrasado: boolean;
+  esta_pago: boolean;
+  
+  constructor() {}
+  
   ngOnInit() {
-
-    
+    this.esta_pago = this.movimentacao.data_fim == "" ? false : true;
+    this.esta_atrasado = !this.esta_pago
+    && Date.now() > Date.parse(this.movimentacao.data_venc);
   }
 
 }

@@ -13,110 +13,66 @@
     {
       "id": 1,
       "tipoId": 1,
-      "estadoId": 0,
-      "valor": 200,
-      "descricao": "Mercado",
-      "data_venc": "",
-      "data_fim": "20/01/2020"
+      "valor": 5342,
+      "descricao": "Salario Mayara",
+      "data_venc": "2020-1-20",
+      "data_fim": "2020-1-20"
     },
     {
       "id": 2,
-      "tipoId": 2,
-      "estadoId": 0,
-      "valor": 200,
-      "descricao": "Boleto",
-      "data_venc": "",
-      "data_fim": "20/01/2020"
+      "tipoId": 1,
+      "valor": 1800,
+      "descricao": "Salario Jorge",
+      "data_venc": "2020-1-20",
+      "data_fim": "2020-1-20"
     },
     {
       "id": 3,
-      "tipoId": 1,
-      "estadoId": 0,
-      "valor": 200,
-      "descricao": "Mercado",
-      "data_venc": "",
-      "data_fim": "20/01/2020"
+      "tipoId": 2,
+      "valor": 253,
+      "descricao": "Claro",
+      "data_venc": "2020-1-20",
+      "data_fim": "2020-1-20"
     },
     {
       "id": 4,
       "tipoId": 2,
-      "estadoId": 0,
-      "valor": 200,
-      "descricao": "Boleto",
-      "data_venc": "",
-      "data_fim": "20/01/2020"
+      "valor": 1613,
+      "descricao": "Aluguel",
+      "data_venc": "2020-1-20",
+      "data_fim": "2020-1-20"
     },
     {
       "id": 5,
-      "tipoId": 1,
-      "estadoId": 0,
-      "valor": 200,
-      "descricao": "Mercado",
-      "data_venc": "",
-      "data_fim": "20/01/2020"
+      "tipoId": 2,
+      "valor": 79,
+      "descricao": "Luz",
+      "data_venc": "2020-1-20",
+      "data_fim": ""
     },
     {
       "id": 6,
       "tipoId": 2,
-      "estadoId": 0,
-      "valor": 200,
-      "descricao": "Boleto",
-      "data_venc": "",
-      "data_fim": "20/01/2020"
+      "valor": 52,
+      "descricao": "Gas",
+      "data_venc": "2020-1-20",
+      "data_fim": "2020-1-20"
     },
     {
       "id": 7,
-      "tipoId": 1,
-      "estadoId": 0,
-      "valor": 200,
-      "descricao": "Mercado",
-      "data_venc": "",
-      "data_fim": "20/01/2020"
+      "tipoId": 2,
+      "valor": 3496,
+      "descricao": "Cartão de Crédito",
+      "data_venc": "2020-1-20",
+      "data_fim": "2020-1-20"
     },
     {
       "id": 8,
       "tipoId": 2,
-      "estadoId": 0,
-      "valor": 200,
-      "descricao": "Boleto",
-      "data_venc": "",
-      "data_fim": "20/01/2020"
-    },
-    {
-      "id": 9,
-      "tipoId": 1,
-      "estadoId": 0,
-      "valor": 200,
-      "descricao": "Mercado",
-      "data_venc": "",
-      "data_fim": "20/01/2020"
-    },
-    {
-      "id": 10,
-      "tipoId": 2,
-      "estadoId": 0,
-      "valor": 200,
-      "descricao": "Boleto",
-      "data_venc": "",
-      "data_fim": "20/01/2020"
-    },
-    {
-      "id": 11,
-      "tipoId": 1,
-      "estadoId": 0,
-      "valor": 200,
-      "descricao": "Mercado",
-      "data_venc": "",
-      "data_fim": "20/01/2020"
-    },
-    {
-      "id": 12,
-      "tipoId": 1,
-      "estadoId": 0,
-      "valor": 200,
-      "descricao": "Mercado",
-      "data_venc": "",
-      "data_fim": "20/01/2020"
+      "valor": 103,
+      "descricao": "Cartão Estudante",
+      "data_venc": "2020-3-20",
+      "data_fim": ""
     }
   ],
   "tipos": [

@@ -1,6 +1,9 @@
-<div class="card meu-card">
-    <div class="card-body">
+<div class="card text-center meu-card">
+    <div [ngClass]="{'card-body': true,
+                    'atrasado': esta_atrasado,
+                    'pago': esta_pago}">
         <h4 class="card-title">{{movimentacao?.descricao}}</h4>
-        <p class="card-text">{{movimentacao?.valor}}</p>
+        <p class="card-text">{{movimentacao?.valor | currency:'R$ ':'symbol'}}</p>
+        <!-- <p class="card-text">{{movimentacao?.data_venc}}</p> -->
     </div>
 </div>

@@ -1,4 +1,14 @@
 .meu-card{
     width: 14rem;
+    height: 8rem;
     margin: 5px;
+    box-shadow: 5px 5px 12px green;
+}
+
+.atrasado{
+    box-shadow: 5px 5px 12px red;
+}
+
+.pago{
+    box-shadow: 5px 5px 12px midnightblue;
 }

@@ -1,8 +1,11 @@
 .movimentacoes{
-    >div{
-        display: flex;
-        flex-direction: row;
-    }
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.entrada,
+.saida {
+    margin: 5px;
 }
 
 .saldo{

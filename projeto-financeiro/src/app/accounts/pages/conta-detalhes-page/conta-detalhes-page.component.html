@@ -1,20 +1,27 @@
 <mat-toolbar color="primary">
-    <span>FirstRow</span>
+    <span>Minha Conta</span>
 </mat-toolbar>
 
 <section class="saldo">
     <h4>Saldo: {{saldo | currency:'R$ ':'symbol'}}</h4>
 </section>
 
-<section class="movimentacoes">
-    <h4>Entradas</h4>
-    <div class="entradas">
-        <app-movimentacao *ngFor="let entrada of entradas" [movimentacao]="entrada">
-        </app-movimentacao>
-    </div>
-    <h4>Saídas</h4>
-    <div class="saidas">
-        <app-movimentacao *ngFor="let saida of saidas" [movimentacao]="saida">
-        </app-movimentacao>
-    </div>
+
+<section>
+
+    <mat-tab-group animationDuration="500ms">
+        <mat-tab label="Entradas">
+            <div class="movimentacoes">
+                <app-movimentacao class="entrada" *ngFor="let entrada of entradas" [movimentacao]="entrada">
+                </app-movimentacao>
+            </div>
+        </mat-tab>
+        <mat-tab label="Saídas">
+            <div class="movimentacoes">
+                <app-movimentacao class="saida" *ngFor="let saida of saidas" [movimentacao]="saida">
+                </app-movimentacao>
+            </div>
+        </mat-tab>
+    </mat-tab-group>
+
 </section>
