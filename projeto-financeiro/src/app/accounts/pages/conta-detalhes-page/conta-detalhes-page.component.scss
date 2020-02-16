@@ -1,6 +1,7 @@
 .movimentacoes{
     display: flex;
     flex-flow: row wrap;
+    justify-content: center;
 }
 
 .entrada,
@@ -11,4 +12,6 @@
 .saldo{
     padding-top: 10px;
     padding-bottom: 10px;
+    display: flex;
+    justify-content: center;
 }
